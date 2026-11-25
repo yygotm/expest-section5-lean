@@ -1,0 +1,12 @@
+name = "expest_l3"
+version = "0.1.0"
+defaultTargets = ["ExpEstL3"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.32.0"
+
+[[lean_lib]]
+name = "ExpEstL3"
+roots = ["Arithmetic", "Bounds", "Estimate", "ExpEst", "RationalData", "HeightComparison", "ExpEstL2", "Numeric", "Selection", "Reduction", "Exceptions", "ExpEstL3", "Witnesses"]
